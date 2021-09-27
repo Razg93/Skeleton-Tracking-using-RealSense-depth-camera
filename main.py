@@ -2,11 +2,7 @@ import time
 import logging
 import os, sys, subprocess, pkg_resources
 import datetime
-
-# set log file
 import cv2
-
-
 
 def install_python_libraries(package):
     args_list = [sys.executable, "-m", "pip", "install", package]
