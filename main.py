@@ -6,11 +6,6 @@ import datetime
 # set log file
 import cv2
 
-log_file_name = "RealSenseTool.log"
-logging.basicConfig(filename=log_file_name, filemode='a', level=logging.DEBUG,
-                    format='[%(asctime)s.%(msecs)d] [%(name)s] [%(levelname)s]: %(message)s',
-                    datefmt='%d-%m-%y %H:%M:%S')
-
 
 def is_on_intel_network():
     # importing socket module
