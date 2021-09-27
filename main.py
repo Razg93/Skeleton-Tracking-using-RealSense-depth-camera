@@ -7,26 +7,9 @@ import datetime
 import cv2
 
 
-def is_on_intel_network():
-    # importing socket module
-    import socket
-    # getting the hostname by socket.gethostname() method
-    hostname = socket.gethostname()
-    # getting the IP address using socket.gethostbyname() method
-    ip_address = socket.gethostbyname(hostname)
-    # printing the hostname and ip_address
-    print("Current hostname: {}".format(hostname))
-    print("Current IP Address: {}".format(ip_address))
-
-    # if this script run on Intel network
-    return ip_address.startswith("10")
-
 
 def install_python_libraries(package):
     args_list = [sys.executable, "-m", "pip", "install", package]
-    # if this script run on Intel network
-    if is_on_intel_network():
-        args_list += ["--proxy", "http://proxy.jer.intel.com:911"]
     subprocess.call(args_list)
 
 
@@ -42,30 +25,6 @@ def check_and_install_libraries():
 
 
 check_and_install_libraries()
-
-
-def info_print(*args, **kwargs):
-    """
-    Print to info screen
-    :param args:
-    :param kwargs:
-    :return:
-    """
-    print(*args, file=sys.stdout, **kwargs)
-    logging.info(*args)
-
-
-def _run_cmd(cmd):
-    """
-    running input cmd command and return its output
-    :param cmd:
-    :return:
-    """
-    import subprocess
-    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    out, _ = process.communicate()
-    return out.decode("utf-8")
-
 
 import cv2
 import mediapipe as mp
