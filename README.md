@@ -3,8 +3,8 @@
 ![image](https://user-images.githubusercontent.com/50642442/134936895-477be5c3-db1f-4577-990d-33807c6cbb6b.png)
 
 Pose estimation refers to computer vision techniques that detect human figures in images and videos.
-The pose estimation models takes a processed camera image as the input and outputs information about keypoints.
-Using these deteceting points in the RGB image and depth image from RealSense camera, in this project I was able to calculate the distance in centimeters to a 33 keypoints in the human body.
+The pose estimation models take a processed camera image as the input and output information about keypoints.
+Using these deteceting points in the RGB image and depth image from RealSense camera, I was able to calculate the distance in centimeters to 33 keypoints in the human body.
 
 # Pose Landmark Model:
 The landmark model in MediaPipe Pose predicts the location of 33 pose landmarks.
