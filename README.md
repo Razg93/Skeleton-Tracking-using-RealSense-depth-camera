@@ -1,6 +1,6 @@
 # Skeleton Tracking using RealSense Depth Camera D435
 
-![image](https://user-images.githubusercontent.com/50642442/134936895-477be5c3-db1f-4577-990d-33807c6cbb6b.png)
+[![Skeleton Tracking using RealSense Depth Camera D435](https://user-images.githubusercontent.com/50642442/135222211-5e697105-0b00-44f0-867d-75cedf2a9342.png)](https://youtu.be/EN4uWCxa36c "Skeleton Tracking using RealSense Depth Camera D435")
 
 Pose estimation refers to computer vision techniques that detect human figures in images and videos.
 The pose estimation models take a processed camera image as the input and output information about keypoints.
